@@ -12,13 +12,13 @@ h1 {
 }
 
 h2 {
-    font-size:60px;
+    font-size: 60px;
     color:white;
     text-align: left;
     font: 5.2rem/1.40 clarendonLight, Georgia;
 }
 
-.submit{
+.knop{
     background-color:darkblue;
     margin-top:20px;
 }
