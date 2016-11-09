@@ -1,5 +1,8 @@
 #this is going to be a configuration code for Code, short or long blinks
 
+## import
+
+
 ## Main screen
 def mainScreen():
     def main(input_value):
@@ -27,7 +30,7 @@ def config():
         if inputValue is 1:
             configLed()
         if inputValue is 2:
-            print('U heeft gekozen om het pincode te weijziggen')
+            menuPinCode()
         if inputValue is 3:
             mainScreen()
     while True:
@@ -38,6 +41,22 @@ def config():
             'Kies 3 om terug te gaan naar het hoofd scherm. \n')
         inputValue = int(input('wat is uw keuze?: '))
         configuration(inputValue)
+
+## change the pincode
+def menuPinCode():
+    def menuPinCode(inputValue):
+        if inputValue is 1:
+            print ('pincode weizigen')
+        if inputValue is 2:
+            config()
+    while True:
+        print('\n',
+            'Keuze menu Pincode. \n',
+            'Kies 1 om pincode te weizigen. \n',
+            'Kies 2 om terug naar het configuratie scherm te gaan')
+        inputValue = int(input('wat is uw keuze?: '))
+        menuPinCode(inputValue)
+
 ## Led configuration Screen
 def configLed():
     def configLight(inputValue):
