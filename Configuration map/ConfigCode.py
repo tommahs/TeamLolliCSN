@@ -21,6 +21,7 @@ def mainScreen():
         inputValue = int(input('Wat is uw keuze?: '))
         main(inputValue)
 
+## Config Screen
 def config():
     def configuration(inputValue):
         if inputValue is 1:
@@ -37,7 +38,7 @@ def config():
             'Kies 3 om terug te gaan naar het hoofd scherm. \n')
         inputValue = int(input('wat is uw keuze?: '))
         configuration(inputValue)
-
+## Led configuration Screen
 def configLed():
     def configLight(inputValue):
         if inputValue is 1:
