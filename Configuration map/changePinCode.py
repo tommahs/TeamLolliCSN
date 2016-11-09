@@ -10,7 +10,7 @@ List= []
 
 
 def readFromFile(file):
-    with open(file, newline='') as f:
+    with open(file) as f:
         reader = csv.reader(f)
         for row in reader:
            content = (row[0])
@@ -25,10 +25,14 @@ def readFromFile(file):
 
 ## Change pincode functie
 def changPinCode(file):
-    inputOld = (input('uw oude pincode?: '))
+    inputOld = input('uw oude pincode?: ')
     content = readFromFile(file)
     if content == inputOld:
-        inputNew = ((input('Voer hier uw nieuwe pincode in: ')))
+        inputNew = input('Voer hier uw nieuwe pincode in: ')
+        print(inputNew)
+        inputNew2 = []
+        for each in inputNew:
+            inputNew2.append
         pincodeFile = open(file, 'w')
         writer = csv.writer(pincodeFile)
         ##   \/ \/ \/ \/ \/ \/  ##
