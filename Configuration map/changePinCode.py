@@ -5,9 +5,6 @@ import csv
 file = 'pincode.csv'
 
 
-List= []
-
-
 
 def readFromFile(file):
     with open(file) as f:
@@ -29,14 +26,12 @@ def changPinCode(file):
     content = readFromFile(file)
     if content == inputOld:
         inputNew = input('Voer hier uw nieuwe pincode in: ')
+        newip = [inputNew]
         print(inputNew)
-        inputNew2 = []
-        for each in inputNew:
-            inputNew2.append
         pincodeFile = open(file, 'w')
         writer = csv.writer(pincodeFile)
         ##   \/ \/ \/ \/ \/ \/  ##
-        writer.writerow(inputNew)
+        writer.writerow(newip)
         ##^^^^^^^^^^^^^^^^^^^^^^^ is het problem
 
         # with open(file, 'w', newline='') as f:
