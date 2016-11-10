@@ -7,8 +7,6 @@ file = 'pincode.csv'
 
 List= []
 
-
-
 def readFromFile(file):
     with open(file) as f:
         reader = csv.reader(f)
