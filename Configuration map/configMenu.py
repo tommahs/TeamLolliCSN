@@ -1,7 +1,7 @@
 #this is going to be a configuration code for Code, short or long blinks
 
 ## import
-
+from changePinCode import changPinCode(file), readFromFile(file)
 
 ## Main screen
 def mainScreen():
@@ -46,7 +46,7 @@ def config():
 def menuPinCode():
     def menuPinCode(inputValue):
         if inputValue is 1:
-            print ('pincode weizigen')
+            changPinCode()
         if inputValue is 2:
             config()
     while True:
